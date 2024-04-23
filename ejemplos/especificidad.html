@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+
+    <style>
+        header h1 span { /* Especificidad: 1 + 1 + 1 = 3 */
+            text-transform: lowercase;
+        }
+
+        span {  /* Especificidad: 1 */
+            text-transform: uppercase;
+        }
+
+        .title {  /* Especificidad: 10 */
+           background: rgb(255, 127, 22);
+            text-transform: uppercase;
+        }
+
+        * { /* lowest priority */
+            background: rgb(6, 194, 219) /* !important --> highest priority */;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <span>Welcome</span> to my class
+            <br>
+            <span class="title">Welcome</span> to my class
+
+        </h1>
+
+    </header>
+</body>
+</html>

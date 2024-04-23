@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Gaegu&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: "Trade Winds", system-ui;
+    font-family: "Gaegu", sans-serif;*/
+    font-family: "Croissant One", serif;
+}
+
+header {
+    
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    background: rgb(100, 181, 100);
+}
+
+nav .menu {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 500px;
+}
+
+nav .menu li { 
+    margin: 0 10px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+nav .menu li a{
+    text-decoration: none;
+    color: black;
+}
+nav img {
+    width: 50%;
+}
+
+figure {
+    padding: 30px;
+}
+
+header img {
+    width: 30%;
+}
+
+section .background {
+    width: 100%;
+    overflow: hidden;
+}
+
+section .background img {
+    width: 100%;
+    
+}
+
+.hatter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hatter-info {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+}
+
+.hatter-info h1 {
+    color: white;
+    background: rgb(225, 131, 73);
+    text-transform: uppercase;
+} 
+
+.hatter-info h2 {
+    color: white;
+    background: rgb(225, 131, 73);
+}
+
+.hatter-info .botones button {
+    padding: 5px 25px;
+    margin: 5px 10px;
+    background: rgb(225, 131, 73);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border: solid white;
+    border-radius: 20px;
+    font-family: "Trade Winds", system-ui;
+}
+
+.notes {
+    text-align: center;
+    margin: 2rem;
+}
+
+.notes h3 {
+    color: rgb(225, 131, 73);
+    margin: 10px;
+    padding: 10px;
+}
+
+.notes h2 {
+    font-size: 3rem;
+    margin: 20px 0 40px 0;
+    color:rgb(225, 131, 73);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.notes p {
+    color: black;
+}
+
+footer {
+    background: rgb(225, 131, 73);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .subscription {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: px;
+    margin: 20px;
+    justify-content: center;
+    align-items: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription button {
+    padding: 0;
+    margin: 5px auto;
+    background: white;
+    color: rgb(225, 131, 73);
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Trade Winds", system-ui;
+    width: 96%;
+}
+
+form input {
+    margin: 10px;
+    padding: 10px 30px;
+    border: solid black 1px;
+    background: white;
+    
+}
+
+footer .social ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social ul li a{
+    margin: 10px;
+    color:white;
+    font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        position: static;
+        background: rgb(100, 181, 100);
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    figure {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    nav .menu{
+        width: 100%;
+        display: block;
+        text-align: center;
+        bottom: 50px;
+    }
+
+    figure {
+        padding: 10px;
+    }
+
+    .hatter {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+    .hatter-info {
+        position: static;
+        text-align: center;
+    }
+    
+    .hatter-info h1, .hatter-info h2 {
+        color: white;
+    }
+    
+    .hatter-info .botones button {
+        width: 50%;
+        padding: 10px 20px;
+        margin-top: 2rem;
+        background: rgb(225, 131, 73);
+        color: white;
+        font-weight: bold;
+        border: solid white;
+        border-radius: 10px;
+    }
+    .notes h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        color: rgb(225, 131, 73);
+        background-color: black;
+    }
+
+}
